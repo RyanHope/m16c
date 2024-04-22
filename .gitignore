@@ -15,6 +15,9 @@ src/
 .DS_Store
 .gradle/
 data/languages/m16c.sla
+data/manuals/M16C62_Hardware_Manual_rev1.20.pdf
+data/manuals/REN_62aeum_MAH_20010618.pdf
+data/manuals/REN_rej03b0001_16c62pds_DST_20060110.pdf
 
 # Vim tags file
 tags
