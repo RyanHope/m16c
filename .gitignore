@@ -12,5 +12,9 @@ lib/
 os/
 src/
 
+.DS_Store
+.gradle/
+data/languages/m16c.sla
+
 # Vim tags file
 tags
