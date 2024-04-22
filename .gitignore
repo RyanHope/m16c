@@ -18,3 +18,7 @@ data/languages/m16c.sla
 
 # Vim tags file
 tags
+
+
+# Sleigh output
+*.sla
