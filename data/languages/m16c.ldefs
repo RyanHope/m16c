@@ -10,6 +10,7 @@
             version="1.0"
             slafile="m16c.sla"
             processorspec="m16c.pspec"
+            manualindexfile="../manuals/m16c.idx"
             id="m16c:LE:16:default">
     <description>Renesas M16C</description>
     <compiler name="default" spec="m16c.cspec" id="default"/>
