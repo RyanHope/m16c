@@ -21,3 +21,7 @@ data/manuals/REN_rej03b0001_16c62pds_DST_20060110.pdf
 
 # Vim tags file
 tags
+
+
+# Sleigh output
+*.sla
