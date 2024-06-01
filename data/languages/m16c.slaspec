@@ -316,14 +316,14 @@ COND8: "NO"      is cnd8=0xfd    { local tmp:1 = !Oflg; export tmp; }
 COND8: "LT"      is cnd8=0xfe    { local tmp:1 = (Oflg != Sflg); export tmp; }
 
 # BMxxx, Jxxx condition
-#COND4: "GEU/C"   is cnd8_11=0x00 { local tmp:1 = Cflg; export tmp; }
-#COND4: "GTU"     is cnd8_11=0x01 { local tmp:1 = Cflg==!Zflg; export tmp; }
-#COND4: "EQ/Z"    is cnd8_11=0x02 { local tmp:1 = Zflg; export tmp; }
-#COND4: "N"       is cnd8_11=0x03 { local tmp:1 = Sflg; export tmp; }
-#COND4: "LTU/NC"  is cnd8_11=0x04 { local tmp:1 = !Cflg; export tmp; }
-#COND4: "LEU"     is cnd8_11=0x05 { local tmp:1 = !(Cflg==!Zflg); export tmp; }
-#COND4: "NE/NZ"   is cnd8_11=0x06 { local tmp:1 = !Zflg; export tmp; }
-#COND4: "PZ"      is cnd8_11=0x07 { local tmp:1 = !Sflg; export tmp; }
+COND4: "GEU/C"   is cnd8_11=0x00 { local tmp:1 = Cflg; export tmp; }
+COND4: "GTU"     is cnd8_11=0x01 { local tmp:1 = Cflg==!Zflg; export tmp; }
+COND4: "EQ/Z"    is cnd8_11=0x02 { local tmp:1 = Zflg; export tmp; }
+COND4: "N"       is cnd8_11=0x03 { local tmp:1 = Sflg; export tmp; }
+COND4: "LTU/NC"  is cnd8_11=0x04 { local tmp:1 = !Cflg; export tmp; }
+COND4: "LEU"     is cnd8_11=0x05 { local tmp:1 = !(Cflg==!Zflg); export tmp; }
+COND4: "NE/NZ"   is cnd8_11=0x06 { local tmp:1 = !Zflg; export tmp; }
+COND4: "PZ"      is cnd8_11=0x07 { local tmp:1 = !Sflg; export tmp; }
 COND4: "LE"      is cnd8_11=0x08 { local tmp:1 = Zflg || (Oflg != Sflg); export tmp; }
 COND4: "O"       is cnd8_11=0x09 { local tmp:1 = Oflg; export tmp; }
 COND4: "GE"      is cnd8_11=0x0A { local tmp:1 = (Oflg == Sflg); export tmp; }
