@@ -1225,7 +1225,7 @@ MOVA_ADDRESS: dsp8[FB]         is FB & dest8_11=11; dsp8        { local addr:2 =
 MOVA_ADDRESS: dsp16[dest8_11]  is dest8_11 & dest8_11=12; dsp16 { local addr:2 = dest8_11+dsp16; export addr; }
 MOVA_ADDRESS: dsp16[dest8_11]  is dest8_11 & dest8_11=13; dsp16 { local addr:2 = dest8_11+dsp16; export addr; }
 MOVA_ADDRESS: dsp16[dest8_11]  is dest8_11 & dest8_11=14; dsp16 { local addr:2 = dest8_11+dsp16; export addr; }
-MOVA_ADDRESS: abs16            is dest8_11 & dest8_11=15; abs16 { local addr:2 = abs16; export addr; }
+MOVA_ADDRESS: abs16            is dest8_11=15; abs16 		{ local addr:2 = abs16; export addr; }
 
 :MOVA MOVA_ADDRESS, dest12_14      is (op0_7=0xEB & bit15=0 & dest12_14) ... & MOVA_ADDRESS {
 	dest12_14 = MOVA_ADDRESS:2;
